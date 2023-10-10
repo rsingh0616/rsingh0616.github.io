@@ -1,48 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Ripunjay Singh</title>
-    <style>
-        /* Styles for the parallax section */
-        .parallax {
-            background-image: url("nyc.jpg"); /* Replace with your 4K NYC image */
-            min-height: 100vh; /* Set a minimum height to fill the viewport */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.7; /* Adjust opacity as needed */
-        }
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ripunjay Singh</title>
+<link rel="stylesheet" href="./index_files/style.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-        /* Styles for the boxes */
-        .box {
-            background-color: rgba(0, 0, 128, 0.7); /* Navy blue with opacity */
-            color: white;
-            font-family: "Times New Roman", Times, serif;
-            text-align: center;
-            padding: 50px;
-            margin: 20px 0; /* Add space between boxes */
-        }
-    </style>
+.parallax {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  background-image: url("nyc.jpg");
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.container {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.container-left {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container-right {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+</style>
 </head>
 <body>
-    <div class="parallax"></div>
 
-    <!-- First box -->
-    <div class="box">
-        <img src="https://avatars0.githubusercontent.com/u/32246208?s=460&u=4d60214f0e79f5a70bbcfecc649c14d5aa8ead6d&v=4" alt="Ripunjay Singh" width="100">
-        <h1>Ripunjay Singh</h1>
-        <h2>Security Savvy | Data Devotee | Coding Crazy</h2>
-        <h3>ripunjay65@gmail.com | Cary, NC 27513</h3>
-    </div>
+<div class="parallax">
+  <div class="caption">
+    <span class="border">SCROLL DOWN</span>
+  </div>
+</div>
 
-    <!-- Second box -->
-    <div class="box">
-        <h4>Hello! Welcome to my website. I am currently pursuing my MS in Cybersecurity from NYU.</h4>
-        <h4>I love to code, read, and write poetry!</h4>
-        <h4>My interests include Cybersecurity, Data Analytics, Healthcare Security, and Secure Software Development</h4>
-        <h4>Do you want to connect? Email me at <a href="mailto:ripunjay65@gmail.com">ripunjay65@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/ripunjaysingh/">LinkedIn</a></h4>
-    </div>
+<div class="container">
+  <div class="container-left">
+    <h3>Parallax Demo</h3>
+    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim.</p>
+  </div>
+  <div class="container-right">
+    <p>My interests include Cybersecurity, Data Analytics, Healthcare Security, and Secure Software Development. Do you want to connect? Email me at <a href="mailto:ripunjay65@gmail.com">ripunjay65@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/ripunjaysingh/">LinkedIn</a>.</p>
+  </div>
+</div>
+
+<div class="parallax">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="parallax">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="parallax">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
+</div>
+
 </body>
 </html>
