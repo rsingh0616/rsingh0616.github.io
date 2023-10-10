@@ -66,17 +66,19 @@ h3 {
   }
 }
 
-a:link, a:visited {
-  background-color: #f44336;
+.button {
+  background-color: #4CAF50;
   color: white;
-  padding: 15px 25px;
-  text-align: center;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
 }
 
-a:hover, a:active {
-  background-color: red;
+.button:hover {
+  background-color: #45a049;
 }
 </style>
 </head>
@@ -99,10 +101,7 @@ a:hover, a:active {
   </div>
 </div>
 
-<div style="position:relative;font-size: large;">
-  <div style="font-size: large;color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
-  <p><a href="Project2.html">About Me</a></p>
-<a href="Project2.html" target="_blank">About me</a>
+<a href="Project2.html" class="button">About Me</a>
   </div>
 </div>
 
