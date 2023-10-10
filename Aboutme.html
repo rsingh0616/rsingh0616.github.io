@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
   height: 100%;
@@ -18,7 +18,6 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .bgimg-1 {
   background-image: url("nyc.jpg");
@@ -37,11 +36,12 @@ body, html {
 
 .caption {
   position: absolute;
-  left: 0;
+  left: 50;
   top: 50%;
-  width: 100%;
+  width: 50%;
   text-align: center;
   color: #000;
+  background-color: #344735;
 }
 
 .caption span.border {
@@ -50,6 +50,27 @@ body, html {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+}
+
+.caption span.border.special-effect {
+  background: linear-gradient(45deg, #f8f9f6, #f5f1f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glow 2s linear infinite;
+  font-size: 100;
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 h3 {
@@ -71,7 +92,7 @@ h3 {
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #39391f;
   color: white;
   padding: 15px 30px;
   font-size: 20px;
@@ -79,54 +100,111 @@ h3 {
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block; /* Make the button inline-block to center it */
 }
 
 .button:hover {
-  background-color: #45a049;
+  background-color: #344735;
 }
+
+.social-icons {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.fa-google, .fa-linkedin {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-google:hover, .fa-linkedin:hover {
+  color: #344735;
+}
+
+/* Add styles for the image */
+.image-container {
+    width: 100%;
+  max-width: 415px; /* Adjust the width as needed */
+    margin: 0 auto;
+    text-align: center;
+    float: left; /* Float the image to the left */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-container {
+  margin-left: 420px; /* Adjust the margin to create space for the image */
+  padding-top: 100px;
+  padding-right: 80px;
+}
+
 </style>
 </head>
 <body>
 
 <div class="bgimg-1">
   <div class="caption">
-  <span class="border">Hello!</span>
+  <span class="border special-effect" style="font-family: 'Times New Roman', Times, serif;font-size: 500%;">Hello!</span>
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">My name is Ripunjay Singh</h3>
-  <p>I am currently studying for my MS in Cybersecurity from the Tandon School of Engineering at NYU. My current interests are Cybersecurity, Secure Software Development, Data Analytics and Healthcare Security. In the past I have been a part of Fortune 50 companies, startups, and NGOs to provide my expertise. I am an avid coder, poet, and reader.</p>
+<div class="image-container">
+  <img src="MYPIC.JPG" alt="Your Image">
+</div>
+
+<div class="text-container">
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 90px;text-align: justify;">
+    <h3 style="text-align:left;font-weight: bold;font-family: 'Times New Roman', Times, serif;">My name is Ripunjay Singh</h3>
+    <p style="font-family: 'Times New Roman', Times, serif;text-align:left;">I am currently studying for my MS in Cybersecurity from the Tandon School of Engineering at NYU. </p>
+    <p style="font-family: 'Times New Roman', Times, serif;text-align:left;">My current interests are Cybersecurity, Secure Software Development, Data Analytics and Healthcare Security. </p>
+    <p style="font-family: 'Times New Roman', Times, serif;text-align:left;">In the past I have been a part of Fortune 50 companies, startups, and NGOs to provide my expertise. I am an avid coder, poet, and reader.</p>
+  </div>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #171616;">Durham Downtown, American Tobacco Building</span>
+  <span style="background-color:transparent;font-size:25px;color: #171616;"></span>
   </div>
 </div>
-<div class="button-container">
-<a href="Project2.html">About Me</a>
+<div style="position:relative;font-size: large;">
+<div style="font-size: large;color:#e4dcdc;background-color:#111;text-align:center;padding:50px 80px;">
+<a href="Project2.html" class="button">About Me</a>
   </div>
 </div>
 
 <div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #eedcdc;">The Great Wave off Kanagawa</span>
+  <div class "caption">
+  <span class="border special-effect" style="background-color:transparent;font-size:25px;color: #111def;"></span>
   </div>
 </div>
 
 <div style="position:relative;font-size: large;">
-  <div style="font-size: large;color:#e4dcdc;background-color:#282E34;text-align:center;padding:50px 80px;">
-  <p>Connect with me! Email me at <a href="mailto:ripunjay65@gmail.com; color: white"> ripunjay65@gmail.com </a> or connect with me on <a href="https://www.linkedin.com/in/ripunjaysingh/"> LinkedIn </a></p>
+    <div style="font-size: large;color:#e4dcdc;background-color:#282E34;text-align:center;padding:50px 80px;">
+      <p>Connect with me! 
+      </p>
+      <!-- Social icons -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ripunjaysingh/" class="fa fa-linkedin"></a>
+        <a href="mailto:ripunjay65@gmail.com" class="fa fa-google"></a>
+      </div>
+    </div>
   </div>
-</div>
 
 <div class="bgimg-1">
   <div class="caption">
-  <span class="border">Thank you for visiting!</span>
+  <span class="border special-effect" style="font-family: 'Times New Roman', Times, serif;font-size: 500%;">Thank you for visiting!</span>
   </div>
 </div>
+
+<div style="position:relative;font-size: large;">
+    <div style="font-size: large;color:#e4dcdc;background-color:#f9fbfd;text-align:left;padding:20px 40px;">
+      <p><a href="index.html" style="align-content: left;font-size: larger;"> Main page </a>
+      </p>x
 
 </body>
 </html>
